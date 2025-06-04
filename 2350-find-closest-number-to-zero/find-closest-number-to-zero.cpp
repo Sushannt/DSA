@@ -1,9 +1,7 @@
 class Solution {
 public:
     int findClosestNumber(vector<int>& nums) {
-        int n = nums.size();
-
-        if(n == 1)   return nums[0];
+        if(nums.size() == 1) return nums[0];
 
         int num_closest_to_zero = nums[0];
         for(int num: nums){
